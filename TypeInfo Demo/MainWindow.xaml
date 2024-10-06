@@ -28,9 +28,10 @@
         
         <TextBox Grid.Row="1" Grid.ColumnSpan="3" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" 
                  Width="382" Text="Type name..." TextAlignment="Left" VerticalContentAlignment="Center" 
-                 FontFamily="Bahnschrift Light" Padding="5 5 15 5"/>
+                 FontFamily="Bahnschrift Light" Padding="5 5 15 5" GotFocus="TextBox_GotFocus" Name="Input" 
+                 Foreground="SlateGray" LostFocus="Input_LostFocus"/>
         <Button Grid.Row="1" Grid.Column="4" Margin="5 5 15 5" Content="Get Info" FontFamily="Bahnschrift" FontSize="14"
-                Cursor="Hand"/>
+                Cursor="Hand" Click="Button_Click"/>
 
         <Label Grid.Row="2" FontSize="22" FontFamily="Bahnschrift" HorizontalAlignment="Left" VerticalAlignment="Center"
                Padding="15 5 0 0">Methods</Label>
@@ -41,9 +42,9 @@
         <Label Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="2" FontSize="22" FontFamily="Bahnschrift" HorizontalAlignment="Left" VerticalAlignment="Center"
                Padding="15 5 0 0">Constructors</Label>
 
-        <TextBox Grid.Row="3" Margin="15 0 15 15" Cursor="IBeam" IsReadOnly="True"></TextBox>
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="15 0 15 15" Cursor="IBeam" IsReadOnly="True"></TextBox>
-        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="15 0 15 15" Cursor="IBeam" IsReadOnly="True"></TextBox>
+        <TextBox Name="Methods" Grid.Row="3" Margin="15 0 15 15" FontFamily="Bahnschrift Light" Cursor="IBeam" IsReadOnly="True"></TextBox>
+        <TextBox Name="Properties" Grid.Row="3" Grid.Column="1" FontFamily="Bahnschrift Light" Margin="15 0 15 15" Cursor="IBeam" IsReadOnly="True"></TextBox>
+        <TextBox Name="Constructors" Grid.Row="3" Grid.Column="2" FontFamily="Bahnschrift Light" Grid.ColumnSpan="2" Margin="15 0 15 15" Cursor="IBeam" IsReadOnly="True"></TextBox>
 
     </Grid>
 </Window>
